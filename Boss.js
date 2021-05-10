@@ -1,5 +1,5 @@
-export default class Boss {
+class Boss extends Movable {
     constructor() {
-        
+        super()
     }
 };

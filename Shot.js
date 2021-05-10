@@ -1,5 +1,5 @@
-export default class Shot {
+class Shot extends Movable {
     constructor() {
-        
+        super()
     }
 };

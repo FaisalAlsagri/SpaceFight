@@ -1,5 +1,5 @@
-export default class Trooper {
+class Trooper extends Movable {
     constructor() {
-        
+        super()        
     }
 };
