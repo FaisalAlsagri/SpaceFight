@@ -31,12 +31,12 @@ document.addEventListener("keydown", (e) => {
     console.log(e);
     context.clearRect(0, 0, canvas.width, canvas.height);
     
-    if (e.keyCode == 39) {
+    if (e.keyCode == 39 && steve.point.x+100 + steve.size.width <= canvas.width) {
         context.beginPath()
         context.strokeStyle = 'red';
         context.rect(steve.point.x += 100, steve.point.y, steve.size.width, steve.size.height);
         context.stroke();
-    }else if(e.keyCode == 37){
+    }else if(e.keyCode == 37 && steve.point.x-100 >= 0 ){
         context.beginPath()
     context.strokeStyle = 'red';
     context.rect(steve.point.x -= 100, steve.point.y, steve.size.width, steve.size.height);
