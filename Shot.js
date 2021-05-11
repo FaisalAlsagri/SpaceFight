@@ -1,5 +1,5 @@
 class Shot extends Movable {
-    constructor() {
-        super()
+    constructor(point = new Point() , size = new Size()) {
+        super(point, size)
     }
 };
