@@ -1,7 +1,7 @@
 class Movable extends Darwable {
         constructor(point = new Point() , size = new Size()) {
         super(point, size)
-        this.speed        
+        this.speed
         this.direction
     }
 
@@ -11,4 +11,6 @@ class Movable extends Darwable {
     setDirection = (direction) => {
         this.direction = direction
     }
+
+    
 };

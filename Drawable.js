@@ -6,8 +6,9 @@ class Darwable {
 
     contains = (innerPoint) => {
         return (innerPoint.point.x + innerPoint.size.width > this.point.x
-            && innerPoint.point.x < this.point.x + this.size.width)
-            && (this.point.y + this.size.height > innerPoint.point.y)
+            && (innerPoint.point.x < this.point.x + this.size.width || 
+                innerPoint.point.x+innerPoint.size.width < this.point.x + this.size.width)) 
+            && (this.point.y + this.size.height > innerPoint.point.y && innerPoint.point.y+innerPoint.size.height > this.point.y)
             
 
         
