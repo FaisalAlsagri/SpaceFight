@@ -201,9 +201,9 @@ let invaderscount = setInterval(() => {
 const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     // counter
-    context.fillStyle = "white";
+    context.fillStyle = "green";
     context.font = "30px Arial";
-    context.fillText(`${count}/${outof}`, 10, 50);
+    context.fillText(`${steve.killCount}/${outof}`, 10, 50);
 
     if ((block1.contains(finalBoss) || block2.contains(finalBoss))
         || ((finalBoss.point.y < 0 && yv < 0) || (finalBoss.point.y + finalBoss.size.height > canvas.height && yv > 0))) {
@@ -219,7 +219,7 @@ const draw = () => {
         endGameMsg("U Won")
     }
     // when all troopers are died
-    if (steve.killCount >= 50 || count == 50) {//50
+    if (steve.killCount >= 50) {//50
         if (!finalfight) {
             mainTheme.pause();
             mainTheme.currentTime = 0;
