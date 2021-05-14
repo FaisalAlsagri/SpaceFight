@@ -42,10 +42,10 @@ let drawBlock = () => {
 }
 let isPlaying = (audelem) => !audelem.paused
 
-let killAudio = (audio) => {
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
+let killAudio = (audioz) => {
+    audioz.pause();
+    audioz.currentTime = 0;
+    audioz.play();
 }
 
 let endGameMsg = (msg) => {
