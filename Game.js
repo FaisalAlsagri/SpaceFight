@@ -64,7 +64,7 @@ document.addEventListener("keydown", (e) => {
         let shot = new Shot(new Point(steve.point.x + (steve.size.width / 2), steve.point.y), new Size(5, 15))
         shot.move(context)
         arrshots.push(shot)
-        killAudio(audio)
+        killAudio(shootingAudio)
 
         clearInterval(pew)
         pew = setInterval(() => {
@@ -116,9 +116,9 @@ let pew //u know what pew pew is ༼ つ ◕_◕ ༽つ🔫
 let invaders // who pew pew for (☞ﾟヮﾟ)☞ ☜(ﾟヮﾟ☜)
 let finalBoss = new Boss(new Point(Math.random() * ((canvas.width - 300) - 0) + 0, 0), new Size(200, 100))
 // Audio
-var audio = new Audio("./Audio/shooting.mp3");
-audio.crossOrigin = 'anonymous';
-audio.volume = 0.02
+var shootingAudio = new Audio("./Audio/shooting.mp3");
+shootingAudio.crossOrigin = 'anonymous';
+shootingAudio.volume = 0.02
 var audioBoss = new Audio("./Audio/BossSooting.mp3");
 audioBoss.volume = 0.02
 var crash = new Audio("./Audio/crashing.mp3");
@@ -201,7 +201,7 @@ let invaderscount = setInterval(() => {
 const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     // counter
-    context.fillStyle = "red";
+    context.fillStyle = "white";
     context.font = "30px Arial";
     context.fillText(`${count}/${outof}`, 10, 50);
 
