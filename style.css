@@ -79,7 +79,7 @@ h2{
 }
 .notYetForMobile:hover::after{
     content: "Use bigger screen";
-    font-size: 50px;
+    font-size: 30px;
     line-height: 28px;
     font-weight: bold;
 }
