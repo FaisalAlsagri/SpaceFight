@@ -14,7 +14,8 @@ let toGame = () => location.replace("main.html")
 let playtheme = () => mainTheme.play() 
 
 let Redirect = () => window.location.href = "index.html"
-
+// let temp =document.getElementsByClassName("start")
+// temp.classList.add("notYet");
 // Math.random()* (max - min) + min
 let getRandom = (min, max) => Math.random() * (max - min) + min
 // initialize 2 blocks

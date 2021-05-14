@@ -13,10 +13,17 @@
 <body>
     <h1>Space Fight</h1>
     <div class="main">
-        <div onclick="toGame()" class="button start">Start</div>
+        <div onclick="toGame()" id="mainGame" class="button start">Start</div>
         <div data-hover="Coming soon" onclick="" class="button notYet">1v1</div>
     </div>
     <script src="./Game.js"></script>
+    <script>
+        if (screen.width < 1000 || window.innerWidth < 800) {
+            var element = document.getElementById("mainGame");
+            element.classList.add("notYetForMobile")
+            element.removeAttribute("onclick");
+        }
+    </script>
 </body>
 
 </html>
