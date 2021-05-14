@@ -201,7 +201,7 @@ let invaderscount = setInterval(() => {
 const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     // counter
-    context.fillStyle = "green";
+    context.fillStyle = "white";
     context.font = "30px Arial";
     if(outof != 20){
         steve.killCount = count;
