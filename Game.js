@@ -117,6 +117,7 @@ let invaders // who pew pew for (☞ﾟヮﾟ)☞ ☜(ﾟヮﾟ☜)
 let finalBoss = new Boss(new Point(Math.random() * ((canvas.width - 300) - 0) + 0, 0), new Size(200, 100))
 // Audio
 var audio = new Audio("./Audio/shooting.mp3");
+audio.crossOrigin = 'anonymous';
 audio.volume = 0.02
 var audioBoss = new Audio("./Audio/BossSooting.mp3");
 audioBoss.volume = 0.02
