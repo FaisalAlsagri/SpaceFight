@@ -4,7 +4,6 @@ html{
     background-size: cover;
     min-height: 100%;
 }
-
 body{
     color: white;
 }
@@ -16,25 +15,21 @@ h1{
     font-size: 5em
 }
 canvas{
-    /* background-color:azure; */
-    background-image: url("./spaceBG.gif");
+    background-image: url("./img/spaceBG.gif");
     background-repeat: no-repeat;
     background-size: 100%
 }
 h2{
     display:none;
-
 }
 #trooper{
     display:none;
-
 }
 #explosion{
     display:none;
 }
 #boss{
     display:none;
-    
 }
 #steve{
     display:none;
@@ -42,16 +37,13 @@ h2{
 #block{
     display:none;
 }
-
 .main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
 .button{
     color: black;
     font-size: 3em;
@@ -71,13 +63,10 @@ h2{
 #mainH1:hover{
     cursor: pointer;
 }
-
-
 .notYet:hover{
     font-size: 0em;
     cursor: not-allowed;
 }
-
 .notYet:hover::after{
     content: "Coming soon";
     font-size: 50px;

@@ -4,13 +4,7 @@ class Movable extends Darwable {
         this.speed
         this.direction
     }
+    setSpeed = (speed) => this.speed = speed
 
-    setSpeed = (speed) => {
-        this.speed = speed
-    }
-    setDirection = (direction) => {
-        this.direction = direction
-    }
-
-    
+    setDirection = (direction) => this.direction = direction    
 };
