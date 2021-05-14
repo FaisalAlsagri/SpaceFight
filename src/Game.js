@@ -11,7 +11,7 @@ window.onload = () => {
 }
 let toGame = () => location.replace("main.html")
 
-let playtheme = () => mainTheme.play()
+let playtheme = () => mainTheme.play() 
 
 let Redirect = () => window.location.href = "index.html"
 
