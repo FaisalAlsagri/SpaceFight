@@ -201,10 +201,14 @@ let invaderscount = setInterval(() => {
 const draw = () => {
     context.clearRect(0, 0, canvas.width, canvas.height);
     // counter
-    context.fillStyle = "white";
+    context.fillStyle = "green";
     context.font = "30px Arial";
-    steve.killCount = count;
-    context.fillText(`${steve.killCount}/${outof}`, 10, 50);
+    if(outof != 20){
+        steve.killCount = count;
+        context.fillText(`${steve.killCount}/${outof}`, 10, 50);
+    }else
+    context.fillText(`${count}/${outof}`, 10, 50);
+    
 
     if ((block1.contains(finalBoss) || block2.contains(finalBoss))
         || ((finalBoss.point.y < 0 && yv < 0) || (finalBoss.point.y + finalBoss.size.height > canvas.height && yv > 0))) {
@@ -235,7 +239,6 @@ const draw = () => {
         // to change the count
         if (outof != 20) {
             count = 0
-            steve.killCount = 0
             outof = 20
         }
 
