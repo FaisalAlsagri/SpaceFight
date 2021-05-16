@@ -149,7 +149,7 @@ initBlocks()
 drawBlock()
 
 invaders = setInterval(() => troopers.push(new Trooper(new Point(Math.random() * ((canvas.width - 100) - 0) + 0, 0), new Size(100, 100)))
-    , 2000);
+    , 1000);
 
 let invaderscount = setInterval(() => {
     troopers.forEach(element => {
